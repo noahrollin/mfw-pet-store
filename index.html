@@ -5,10 +5,138 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pet Store</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+	    <!-- notes for myself to study -->
+		<!-- .container-fluid>.container>(header.row>.col-xs-8.col-sm-4.col-md-6.centered>(img.logo.pull-left)+(h1.pull-left.text-center{Pet Store})+(nav.col-xs-12.col-sm-7.col-md-6>(ul>(li[role=presentation])*3))) -->
+
+	<div class="container-fluid">
+		<div class="container">
+			<header class="row">
+				<div class="col-xs-8 col-sm-4 col-md-6 centered">
+					<img src="img/petstore_logo.png" alt="Pet store logo" class="logo pull-left">
+					<h1 class="pull-left text-center">Pet Store</h1>
+				</div>
+				<nav class="col-xs-12 col-sm-7 col-md-6">
+					<ul class="nav nav-pills pull-right">
+						<li role="presentation" class="active">
+							<a href="index.html">Home</a>
+						</li>
+						<li role="presentation">
+							<a href="#">Products</a>
+						</li>
+						<li role="presentation">
+							<a href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="jumbotron">
+			<div class="container text-center text-uppercase">
+				<h2>The Products They Love. Prices that you like.</h2>
+			</div>
+		</div>
+		<section class="container">
+			<div class="row">
+				<div class="col-sm-7 text-jsutify featured">
+					<h2 class="text-uppercase">Featured</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae rerum provident modi saepe at ducimus.</p>
+
+					<!-- notes for myself -->
+					<!-- (.row>(.col-sm-4.product>.row>(.col-sm-12.col-xs-6.img_box>img[src=img/product$.jpg][alt="#"].img-responsive)+(.col-sm-12.col-xs-6>h4{Dog Toy}+p{lorem8}+button.btn.btn-xs.center-block{Purchase Meow}))*3) -->
+
+					<div class="row">
+						<div class="col-sm-4 product">
+							<div class="row">
+								<div class="col-sm-12 col-xs-6 img_box">
+									<img src="img/product1.jpg" alt="#" class="img-responsive">
+								</div>
+								<div class="col-sm-12 col-xs-6">
+									<h4>Dog Toy</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<button class="btn btn-xs center-block">Purchase Meow</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 product">
+							<div class="row">
+								<div class="col-sm-12 col-xs-6 img_box">
+									<img src="img/product2.jpg" alt="#" class="img-responsive">
+								</div>
+								<div class="col-sm-12 col-xs-6">
+									<h4>Cat Toy</h4>
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+									<button class="btn btn-xs center-block">Purchase Meow</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 product">
+							<div class="row">
+								<div class="col-sm-12 col-xs-6 img_box">
+									<img src="img/product3.jpg" alt="#" class="img-responsive">
+								</div>
+								<div class="col-sm-12 col-xs-6">
+									<h4>Parrot Toy</h4>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+									<button class="btn btn-xs center-block">Purchase Meow</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="col-sm-3 col-sm-offset-2">
+					<h2 class="text-center text-uppercase">Services</h2>
+					<ul class="nav nav-pills nav-stacked text-center">
+						<li role="presentation">
+							<a href="" class="text-uppercase">Adopt a Cat</a>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						</li>
+						<li role="presentation">
+							<a href="" class="text-uppercase">Adopt a Doge</a>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						</li>
+						<li role="presentation">
+							<a href="" class="text-uppercase">Adopt a Fishy</a>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+						</li>
+					</ul>
+				</aside>
+
+
+			</div>
+		</section>
+
+		<footer class="foots">
+			<div class="col-xs-4 col-sm-4 col-md-4 centered">
+				<img src="img/petstore_logo.png" alt="Pet store logo" class="logo pull-left">
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 centered info">
+				<un class="list-unstyled">
+					<li role="presentation">Pet Store</li>
+					<li role="presentation">Fresno, CA</li>
+					<li role="presentation">info@petstore.com</li>
+				</un>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 centered">
+				<un class="list-unstyled">
+					<li role="presentation"><i class="fab fa-facebook-f"></i>  Facebook</li>
+					<li role="presentation"><i class="fab fa-twitter"></i>  Twitter</li>
+					<li role="presentation"><i class="fab fa-linkedin-in"></i>  Linkedin</li>
+				</un>
+			</div>
+				<p class="pull-right">&copyPet Store, Inc.All rights reserved.</p>
+		</footer>
+	</div>
+
+
+
+
 
 	<!-- scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
